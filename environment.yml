@@ -1,0 +1,13 @@
+name: parachute
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pyyaml=6.0.2
+  - tqdm=4.66.5
+  - scipy=1.10.1
+  - pandas
+  - pip
+  - scikit-learn=1.2.2
+  - joblib=1.4.2
+  - h5py

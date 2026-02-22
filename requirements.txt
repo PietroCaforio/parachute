@@ -1,0 +1,15 @@
+torch==2.5.1
+torchvision==0.20.1
+opencv-python==4.10.0.84
+pydicom==2.4.4
+pydicom-seg==0.4.1
+simpleitk==2.4.0
+lifelines==0.30.0
+formulaic==1.1.1
+autograd==1.7.0
+autograd-gamma==0.5.0
+einops==0.8.1
+numpy==1.24.2
+requests
+staintools==2.1.2
+torchstain==1.4.1

@@ -1,0 +1,53 @@
+{
+    "data_training": {
+        "ct_path": "data/features/CPTACUCEC/MedImageInsights",
+        "wsi_path": "data/features/CPTACUCEC/TITAN",
+        "labels_splits_path": "./data/labels_splits/CPTACUCEC/k=all.tsv",
+        "missing_modality_prob":0.0,
+        "require_both_modalities":true,
+        "pairing_mode":"one_to_one",
+        "allow_repeats":true,
+        "pairs_per_patient":null
+    },
+    "data_validation": {
+        "ct_path": "data/features/CPTACUCEC/MedImageInsights",
+        "wsi_path": "data/features/CPTACUCEC/TITAN",
+        "labels_splits_path": "./data/labels_splits/CPTACUCEC/k=all.tsv",
+        "missing_modality_prob":0.0,
+        "require_both_modalities":true,
+        "pairing_mode":"one_to_one",
+        "allow_repeats":true,
+        "pairs_per_patient":null
+    },
+    "data_loader": {
+        "num_workers": 0
+    },
+    "model": {
+        "rad_input_dim": 1024,
+        "histo_input_dim": 768,
+        "inter_dim":256,
+        "token_dim":256,
+        "dim_hider": 256
+    },
+    "training": {
+        "num_epochs": 400,
+        "batch_size": 16,
+        "learning_rate": 5e-3,
+        "checkpoint_dir": "./models/ckpts/",
+        "log_interval": 1,
+        "scheduler": {
+            "type": "cosine_annealing_lr",
+            "T_max": 80,
+            "eta_min": 9e-4,
+            "last_epoch": -1
+        },
+        "early_stopping": {
+            "patience":1000,
+            "min_delta":1e-6,
+            "mode": "max"
+	    },
+        "monitor_metric": "val_cindex",
+        "gpu":1,
+        "n_validations": null
+    }
+}

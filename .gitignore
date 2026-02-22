@@ -1,0 +1,27 @@
+# blacklist everyhting
+*
+
+# don't blacklist directories
+!*/
+
+# and don't blacklist these files
+!.gitignore
+!*.md
+!*.py
+!*.ipynb
+!*.txt
+!*.github/workflows/ci.yaml
+!*.csv
+!*.tsv
+!*.sh
+!*.yml
+!*.yaml
+!Makefile
+!*.tcia
+!*.json
+!/data/features/**/
+!/data/features/**/.gitkeep
+!/models/ckpts/
+# ignore all checkpoint subdirs/files
+/models/ckpts/*
+!/models/ckpts/.gitkeep
