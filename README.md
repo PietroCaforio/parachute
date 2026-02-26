@@ -214,7 +214,14 @@ This work leverages:
 ## Citation
 If you find our work useful in your research, please consider citing our paper:
 ```
-TBD
+@InProceedings{Caforio_2026_WACV,
+    author    = {Caforio, Pietro and Poles, Isabella and Santambrogio, Marco D.},
+    title     = {PaRaChute: Pathology-Radiology Cross-Modal Fusion for Missing-Modality-Robust Survival Prediction},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {March},
+    year      = {2026},
+    pages     = {718-728}
+}
 ```
 
 
