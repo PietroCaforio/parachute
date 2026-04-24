@@ -2,7 +2,7 @@
 
 ## Introduction
 This repository contains the implementation for the WACV 2026 paper "PaRaChute: Pathology-Radiology Cross-Modal Fusion for Missing-Modality-Robust Survival Prediction".
-<img width="3847" height="1288" alt="parachute" src="https://github.com/user-attachments/assets/03892bc4-13e0-4f04-b0f3-b8e6fce9a924" />
+<img width="3847" height="1288" alt="parachute" src="./assets/parachute.png" />
 
 ## Setup
 Create the Conda environment:
